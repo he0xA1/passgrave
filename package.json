@@ -1,0 +1,38 @@
+{
+  "name": "passgrave",
+  "version": "1.0.0",
+  "description": "my secure password manager",
+  "keywords": [
+    "password-manager",
+    "cli"
+  ],
+  "homepage": "https://github.com/he0xA1/passgrave#readme",
+  "bugs": {
+    "url": "https://github.com/he0xA1/passgrave/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/he0xA1/passgrave.git"
+  },
+  "bin": "./dist/index.js",
+  "license": "AGPL-3.0-only",
+  "author": "he0xA1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ./dist/index.js",
+    "test": "node --test ./dist/test/index.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "ava": "^6.4.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^14.0.0",
+    "@msgpack/msgpack": "^3.1.2",
+    "argon2": "^0.44.0",
+    "commander": "^14.0.2"
+  }
+}
